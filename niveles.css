@@ -1,0 +1,58 @@
+/* Estilos personalizados para el dashboard */
+#wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#sidebar-wrapper {
+    width: 250px;
+    height: 100vh;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    padding: 20px;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: -250px;
+}
+
+.sidebar-heading {
+    padding: 10px 15px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.list-group-item {
+    padding: 15px;
+    border: none;
+}
+
+.list-group-item:hover {
+    background-color: #343a40;
+}
+.sidebar-heading {
+    padding: 10px 15px;
+    font-size: 1.2em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar-heading .logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: -250px;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: 0;
+    }
+}

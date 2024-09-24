@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link  rel="icon"  href="img/iep.ico">
+
+    <title>registro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e2a35;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .register-container {
+            background-color: #2b3945;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            background-color: #394a59;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        input::placeholder {
+            color: #a9b1ba;
+        }
+
+        .register-btn {
+            width: 100%;
+            padding: 15px;
+            background-color: #58a6ff;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .register-btn:hover {
+            background-color: #4090e5;
+        }
+
+        .social-register {
+            margin-top: 20px;
+        }
+
+        .social-register button {
+            width: 45%;
+            padding: 10px;
+            margin: 10px 2.5%;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .social-register .facebook {
+            background-color: #3b5998;
+            color: white;
+        }
+
+        .social-register .google {
+            background-color: #db4437;
+            color: white;
+        }
+
+        .social-register .facebook:hover {
+            background-color: #334d8b;
+        }
+
+        .social-register .google:hover {
+            background-color: #c13729;
+        }
+
+        .small-text {
+            font-size: 12px;
+            color: #a9b1ba;
+            margin-top: 10px;
+        }
+
+        .login-link {
+            margin-top: 20px;
+        }
+
+        .login-link a {
+            color: #58a6ff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="register-container">
+        <h1>Registrarse</h1>
+        <form action="registro.php" method="POST">
+            <input type="text" name="nombre" placeholder="Nombre completo" required>
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <input type="password" name="password" placeholder="Contraseña" required>
+            <button class="register-btn" type="submit">CREAR CUENTA</button>
+        </form>
+
+    </div>
+
+</body>
+</html>

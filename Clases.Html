@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link  rel="icon"  href="img/iep.ico">
+
+
+<title>Seleccionar Materia y Grado</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #1c1729;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .container {
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 24px;
+        color: #555;
+        margin-bottom: 20px;
+    }
+
+    .select-box {
+        margin: 20px 0;
+    }
+
+    label {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+
+    select {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 2px solid #d3d3d3;
+        width: 180px;
+        outline: none;
+        margin-right: 15px;
+    }
+
+    .btn {
+        background-color: #000749;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 30px;
+        font-size: 18px;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #000d46;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Seleccionar Materia y Grado</h1>
+
+    <div class="select-box">
+        <label for="materia">Materia:</label>
+        <select id="materia" name="materia">
+            <option value="espanol">Español</option>
+            <option value="ingles">Inglés</option>
+            <option value="matematicas">Matemáticas</option>
+        </select>
+    </div>
+
+    <div class="select-box">
+        <label for="grado">Grado:</label>
+        <select id="grado" name="grado">
+            <option value="3">3ro</option>
+            <option value="4">4to</option>
+            <option value="5">5to</option>
+        </select>
+    </div>
+
+    <a href="Niveles.Html" class="btn btn-green">Enviar</button></a>
+
+</body>
+</html>
